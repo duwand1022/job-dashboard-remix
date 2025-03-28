@@ -1,0 +1,185 @@
+/* app/styles/dashboard.css */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-job-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.filters input, .filters select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tech-stack-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.tech-stack-filter label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.job-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.job-list th, .job-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-list th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.job-list th:hover {
+  background-color: #e6e6e6;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tech-tag {
+  background-color: #e1f5fe;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.total-jobs {
+  text-align: right;
+  font-style: italic;
+}
+
+/* Add/Edit Job styles */
+.add-job, .job-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-job label, .job-detail label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-job input[type="text"],
+.add-job input[type="number"],
+.add-job textarea,
+.add-job select,
+.job-detail input[type="text"],
+.job-detail input[type="number"],
+.job-detail textarea,
+.job-detail select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-job textarea, .job-detail textarea {
+  min-height: 100px;
+}
+
+.salary-range div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.salary-range input {
+  width: auto;
+}
+
+.tech-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+
+.add-job button, .job-detail button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.job-detail .delete {
+  background-color: #f44336;
+}
+
+.error {
+  color: #f44336;
+  margin-bottom: 15px;
+}
